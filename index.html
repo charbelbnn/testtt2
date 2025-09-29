@@ -48,20 +48,28 @@
       Hold & drag to move the frame once placed
     </p>
 
-    <model-viewer
-      id="frame-viewer"
-      src="eunomia.glb"
-      alt="Picture Frame"
-      ar
-      ar-modes="webxr scene-viewer quick-look"
-      camera-controls
-      auto-rotate
-      shadow-intensity="1"
-      placement-mode="wall"
-      interaction-prompt="auto"
-      style="display: none"
-    >
-    </model-viewer>
+    <div style="display: flex; gap: 20px;">
+        <model-viewer
+          id="frame-viewer"
+          src="eunomia.glb"
+          alt="Picture Frame"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          placement-mode="wall"
+          interaction-prompt="auto"
+          style="width: 60%; height: 500px"
+        >
+        </model-viewer>
+        <div style="flex:1;">
+          <h3> Model Mesurement </h3>
+          <p>
+            The model is 100cm x 100cm x 100cm
+          </p>
+        </div>
+    </div>
 
     <script>
       const arButton = document.getElementById("ar-button");
